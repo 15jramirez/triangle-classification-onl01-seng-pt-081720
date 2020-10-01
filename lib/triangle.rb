@@ -8,6 +8,11 @@ class Triangle
  end
  
  def kind 
-   
+   if (length_one == length_two) && (length_two == length_three)
+     :equilateral
+   elsif (length_one)
+ end
+ 
+ class TriangleError < StandardError
  end
 end
