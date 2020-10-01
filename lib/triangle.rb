@@ -8,10 +8,10 @@ class Triangle
  end
  
  def kind 
-   if length_one <= 0 && le <= 0 && @side_3 <= 0
-   elsif length_one == length_two && length_two == length_three
+   if @length_one <= 0 && @length_two <= 0 && @length_three <= 0
+   elsif @length_one == @length_two && @length_two == @length_three
      :equilateral
-   elsif length_one == length_two || length_two == length_three || length_three == length_one
+   elsif @length_one == @length_two || @length_two == @length_three || @length_three == @length_one
      :isosceles
    else
      :scalene
