@@ -10,7 +10,7 @@ class Triangle
  def kind 
    if (length_one == length_two) && (length_two == length_three)
      :equilateral
-   elsif (length_one == length_two) && (length_two != length_three)
+   elsif (length_one == length_two) && (length_two != length_three) || (length_one != length_two) && (length_two == length_three)
      :isosceles
    else
      :scalene
