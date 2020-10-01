@@ -26,6 +26,8 @@ class Triangle
  end
  
  class TriangleError < StandardError
-   def 
+   def message
+     "Violation of triangles. Trianagle must have a postive size"
+   end
  end
 end
