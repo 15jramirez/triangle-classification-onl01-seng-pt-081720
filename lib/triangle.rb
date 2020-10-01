@@ -11,7 +11,6 @@ class Triangle
    if @length_one <= 0 || @length_two <= 0 || @length_three <= 0 
     begin
         raise PartnerError
-          puts error.message
       end
    elsif @length_one == @length_two && @length_two == @length_three
      :equilateral
@@ -23,8 +22,5 @@ class Triangle
  end
  
  class TriangleError < StandardError
-   def message
-     "Violation of triangles. Trianagle must have a postive size"
-   end
  end
 end
