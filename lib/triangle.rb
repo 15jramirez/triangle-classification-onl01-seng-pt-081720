@@ -10,7 +10,10 @@ class Triangle
  def kind 
    if (length_one == length_two) && (length_two == length_three)
      :equilateral
-   elsif (length_one)
+   elsif (length_one == length_two) && (length_two != length_three)
+     :isosceles
+   else
+     :scalene
  end
  
  class TriangleError < StandardError
