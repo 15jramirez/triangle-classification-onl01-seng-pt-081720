@@ -12,10 +12,8 @@ class Triangle
      :equilateral
    elsif length_one == length_two || length_two == length_three || length_three == length_one
      :isosceles
-   elsif length_one < 0 && length_two <0 && length_three < 0
-    raise TriangleError
    else
-     :scalen
+     :scalene
    end
  end
  
